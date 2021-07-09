@@ -1,0 +1,20 @@
+.header {
+  height: 60px;
+  display: flex;
+  background-color: #232f3e;
+  align-items: center;
+  position: sticky;
+}
+
+.header__logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 15px;
+}
+
+.header__nav {
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-evenly;
+}

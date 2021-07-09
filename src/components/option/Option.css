@@ -1,0 +1,25 @@
+.header__option {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin: 0 20px 0 0px;
+}
+
+.header__option--cart {
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__option-logo-cart {
+  margin: 0 10px;
+}
+
+.header__option-line-one {
+  font-size: 12px;
+  filter: brightness(60%);
+}
+
+.header__option-line-two {
+  font-size: 18px;
+  font-weight: bolder;
+}
