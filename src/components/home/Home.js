@@ -13,13 +13,40 @@ function Home() {
           alt="banner"
         />
         <div className="home__row">
-          <Product />
-          <Product />
-          <Product />
+          <Product
+            title="Architecture orianté service"
+            rating={4}
+            price={29.99}
+            image={
+              "https://m.media-amazon.com/images/I/418BWH1NFIL._AC_SY200_.jpg"
+            }
+          />
+          <Product
+            title="Controller"
+            rating={3}
+            price={29.99}
+            image={
+              "https://m.media-amazon.com/images/I/41Y15o6btZL._AC_SY200_.jpg"
+            }
+          />
+          <Product
+            title="Xbox Wireless Controller - Black"
+            rating={5}
+            price={49.99}
+            image={
+              "https://m.media-amazon.com/images/I/41LO2OX6pRL._AC_SY200_.jpg"
+            }
+          />
         </div>
         <div className="home__row">
-          <Product />
-          <Product />
+          <Product
+            title="Acer EI1 49 Widescreen Monitor DFHD 3840 x 1080 4ms GTG 144 Hz 32:9 400 Nit VA (Renewed)"
+            rating={4}
+            price={669.99}
+            image={
+              "https://m.media-amazon.com/images/I/81Pu2xvPgfL._AC_UY218_.jpg"
+            }
+          />
         </div>
       </div>
     </div>

@@ -2,23 +2,20 @@ import React from "react";
 import SimpleRating from "../rating/SimpleRating";
 import "./Product.css";
 
-function Product() {
+function Product({ title, image, rating, price }) {
   return (
     <div className="product">
       <div className="product__info">
-        <p>The lean startup</p>
+        <p>{title}</p>
         <p className="product__price">
           <small>$</small>
-          <strong>19.99</strong>
+          <strong>{price}</strong>
         </p>
         <div className="product__rating">
-          <SimpleRating rating={4} />
+          <SimpleRating rating={rating} />
         </div>
       </div>
-      <img
-        src="https://m.media-amazon.com/images/I/418BWH1NFIL._AC_SY200_.jpg"
-        alt="product"
-      />
+      <img src={image} alt="product" />
 
       <button>Add to Basket</button>
     </div>

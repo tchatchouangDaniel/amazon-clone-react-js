@@ -6,6 +6,9 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import "./Cart.css";
 
 const StyledBadge = withStyles((theme) => ({
+  root: {
+    color: "#ffffff",
+  },
   badge: {
     right: -3,
     top: 13,
