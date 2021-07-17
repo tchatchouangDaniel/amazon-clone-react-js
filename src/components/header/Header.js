@@ -16,7 +16,12 @@ function Header() {
       </Link>
       <TopSearchBar />
       <div className="header__nav">
-        <Option haveIcon={false} lineOne="Hello User" lineTwo="Sign In" />
+        <Option
+          link={true}
+          haveIcon={false}
+          lineOne="Hello User"
+          lineTwo="Sign In"
+        />
         <Option haveIcon={false} lineOne="Returns" lineTwo="& Orders" />
         <Option haveIcon={false} lineOne="Your" lineTwo="Prime" />
         <Link to="/checkout">

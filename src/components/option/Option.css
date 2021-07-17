@@ -19,7 +19,14 @@
   filter: brightness(60%);
 }
 
-.header__option-line-two {
-  font-size: 18px;
+.header__option-link {
+  text-decoration: none;
   font-weight: bolder;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.header__option-link:hover {
+  filter: brightness(80%);
+  transform: scale(1.05);
 }
