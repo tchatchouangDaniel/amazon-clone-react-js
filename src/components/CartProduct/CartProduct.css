@@ -12,10 +12,10 @@ button {
 }
 
 .card-product__image {
-  flex: 0 0 300px;
+  object-fit: contain;
   margin-right: 40px;
-  height: auto;
-  width: 50px;
+  height: 180px;
+  width: 180px;
 }
 
 .card-product__title {

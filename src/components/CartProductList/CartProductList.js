@@ -11,6 +11,7 @@ function CartProductList() {
         return (
           <CartProduct
             key={id}
+            id={id}
             title={title}
             image={image}
             price={price}
