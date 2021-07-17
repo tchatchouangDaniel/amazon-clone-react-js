@@ -4,6 +4,7 @@ import { withStyles } from "@material-ui/core/styles";
 import IconButton from "@material-ui/core/IconButton";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import "./Cart.css";
+import { useStateValue } from "../../StateProvider";
 
 const StyledBadge = withStyles((theme) => ({
   root: {
@@ -18,9 +19,11 @@ const StyledBadge = withStyles((theme) => ({
 }))(Badge);
 
 export default function CustomizedBadges() {
+  const [{ basket }, dispatch] = useStateValue();
+  const itemNumber = basket?.length;
   return (
     <IconButton className="icon" aria-label="cart">
-      <StyledBadge badgeContent={"0"}>
+      <StyledBadge badgeContent={itemNumber ? itemNumber : "0"}>
         <ShoppingCartIcon />
       </StyledBadge>
     </IconButton>

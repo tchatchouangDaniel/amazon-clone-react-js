@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
-import SimpleRating from "../rating/SimpleRating";
 import Product from "../product/Product";
+import ProductList from "../product-list/ProductList";
 
 function Home() {
   return (
@@ -13,30 +13,7 @@ function Home() {
           alt="banner"
         />
         <div className="home__row">
-          <Product
-            title="Architecture orianté service"
-            rating={4}
-            price={29.99}
-            image={
-              "https://m.media-amazon.com/images/I/418BWH1NFIL._AC_SY200_.jpg"
-            }
-          />
-          <Product
-            title="Controller"
-            rating={3}
-            price={29.99}
-            image={
-              "https://m.media-amazon.com/images/I/41Y15o6btZL._AC_SY200_.jpg"
-            }
-          />
-          <Product
-            title="Xbox Wireless Controller - Black"
-            rating={5}
-            price={49.99}
-            image={
-              "https://m.media-amazon.com/images/I/41LO2OX6pRL._AC_SY200_.jpg"
-            }
-          />
+          <ProductList />
         </div>
         <div className="home__row">
           <Product
