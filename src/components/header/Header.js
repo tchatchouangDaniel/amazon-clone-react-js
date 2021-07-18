@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import Option from "../option/Option";
 import "./Header.css";
 import TopSearchBar from "../headerSearchBar/TopSearchBar";
+import { useStateValue } from "../../StateProvider";
 
 function Header() {
+  const [{ user }, dispatch] = useStateValue();
   return (
     <div className="header">
       <Link to="/">
@@ -17,10 +19,10 @@ function Header() {
       <TopSearchBar />
       <div className="header__nav">
         <Option
-          link={true}
+          authLink={true}
           haveIcon={false}
           lineOne="Hello User"
-          lineTwo="Sign In"
+          lineTwo={user ? "Sign Out" : "Sign In"}
         />
         <Option haveIcon={false} lineOne="Returns" lineTwo="& Orders" />
         <Option haveIcon={false} lineOne="Your" lineTwo="Prime" />
