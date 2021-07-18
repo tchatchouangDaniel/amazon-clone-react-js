@@ -15,7 +15,7 @@
 
 ## Demo
 
-Will come soon...
+click this link : [amazon-clone](https://challenge-22c3d.web.app)
 
 ## Quick Start
 
