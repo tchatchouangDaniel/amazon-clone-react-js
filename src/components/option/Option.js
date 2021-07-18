@@ -22,12 +22,12 @@ function Option(props) {
             <Link
               onClick={handleAuthentication}
               className="header__option-link"
-              to={user ? "/" : "/login"}
+              to={!user && "/login"}
             >
               <span className="header__option-line-two">{props.lineTwo}</span>
             </Link>
           ) : (
-            <span className="header__option-line-two">{props.lineTwo}</span>
+            <span className="header__option-lin e-two">{props.lineTwo}</span>
           )}
         </div>
       ) : (

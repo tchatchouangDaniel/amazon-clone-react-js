@@ -2,8 +2,9 @@ import React from "react";
 import "./Checkout.css";
 import Subtotal from "../Subtotal/Subtotal";
 import CardProductList from "../CartProductList/CartProductList";
-
+import { useStateValue } from "../../StateProvider";
 function Checkout() {
+  const [{ user }, dispatch] = useStateValue();
   return (
     <div className="checkout">
       <div className="checkout__left">
@@ -14,6 +15,12 @@ function Checkout() {
         />
         <div>
           <div>
+            {user ? (
+              <h3 className="checkout__title no-border">Hello, {user.email}</h3>
+            ) : (
+              <></>
+            )}
+
             <h2 className="checkout__title">Your Shopping Basket</h2>
             <CardProductList />
           </div>

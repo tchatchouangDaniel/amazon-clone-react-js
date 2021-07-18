@@ -21,7 +21,7 @@ function Header() {
         <Option
           authLink={true}
           haveIcon={false}
-          lineOne="Hello User"
+          lineOne={`Hello ${user ? user.email : "Guest"}`}
           lineTwo={user ? "Sign Out" : "Sign In"}
         />
         <Option haveIcon={false} lineOne="Returns" lineTwo="& Orders" />
