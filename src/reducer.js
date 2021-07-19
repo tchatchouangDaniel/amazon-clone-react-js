@@ -30,6 +30,35 @@ const reducer = (state = initialState, action) => {
         ...state,
         user: action.user,
       };
+
+    case "CHANGE_QTY":
+      const i = state.basket.findIndex((item) => item.id === action.item?.id);
+      let fBasket = [...state.basket];
+      if (action.item.qty === 0) {
+        fBasket.splice(i, 1);
+      } else {
+        fBasket[i].qty = action.item.qty;
+      }
+
+      return {
+        ...state,
+        basket: [...fBasket],
+      };
+    case "REMOVE_ALL":
+      return {
+        ...state,
+        basket: [],
+      };
+    case "REMOVE_PRODUCT":
+      const index = state.basket.findIndex(
+        (item) => item.id === action.item?.id
+      );
+      let removedBasket = [...state.basket];
+      removedBasket.splice(index, 1);
+      return {
+        ...state,
+        basket: [...removedBasket],
+      };
     default:
       return state;
   }

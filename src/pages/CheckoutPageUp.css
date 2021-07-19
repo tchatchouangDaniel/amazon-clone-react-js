@@ -1,0 +1,160 @@
+.checkoutUp-wrapper {
+  margin: 20px;
+}
+
+.section-checkout {
+  display: flex;
+  align-items: flex-start;
+}
+
+.carting {
+  display: flex;
+  flex-direction: column;
+}
+
+.carting__welcome {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gift-container {
+  flex: 0 0;
+}
+
+.checkout-box {
+  margin-right: 25px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.btn-more {
+  flex: 0 0 60px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 12px;
+  padding: 10px 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.btn-more:hover {
+  filter: brightness(70%);
+}
+
+.gift {
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+}
+
+.welcome-text {
+  padding: 0 30px;
+}
+
+.carting__cart h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.btn-action {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  color: #007185;
+  font-size: 14px;
+  text-transform: capitalize;
+  padding: 0 10px;
+}
+
+.btn-action:hover {
+  text-decoration: underline;
+  filter: brightness(80%);
+}
+
+.price-text {
+  text-align: right;
+  border-bottom: 1px solid #eaeded;
+}
+
+.price-text p {
+  padding: 5px 0;
+  text-transform: capitalize;
+  color: rgb(119, 119, 119);
+  font-size: 14px;
+}
+
+.cart-product {
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 1px solid #eaeded;
+}
+
+.cart-product__stock {
+  font-size: 13px;
+  padding-top: 5px;
+}
+
+.cart-product__details {
+  flex: 1;
+}
+
+.gift-box {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.gift-box label {
+  margin: 0 5px;
+  font-size: 12px;
+}
+
+.stock-in {
+  color: #067d62;
+}
+
+.cart-product__image {
+  object-fit: contain;
+  margin-right: 10px;
+  height: 180px;
+  width: 180px;
+}
+
+.cart-product__detail {
+  font-weight: 400;
+  padding-right: 150px;
+}
+
+.sub-total {
+  text-align: right;
+  font-size: 19px;
+  padding: 10px 0 30px 0;
+  font-weight: 400;
+}
+
+.sub-total-text span {
+  font-weight: bold;
+}
+
+.bordered {
+  border-radius: 0;
+  border-left: 1px solid #eaeded;
+  border-right: 1px solid #eaeded;
+}
+
+.card-product__select {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #eaeded;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.card-product__select:hover {
+  filter: brightness(80%);
+}
+
+.item-price {
+  font-weight: bolder;
+}

@@ -1,10 +1,8 @@
-.header {
+.header-top {
   height: 60px;
   display: flex;
-  background-color: #232f3e;
+  background-color: #131921;
   align-items: center;
-  position: sticky;
-  top: 0;
   z-index: 200;
 }
 
